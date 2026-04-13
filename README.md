@@ -29,14 +29,14 @@ The codebase follows a **feature-first** pattern with **clean architecture** bou
 lib/
 ├── core/            # Shared infrastructure (theme, config, errors, utils)
 ├── features/
-│   ├── auth/        # ✅ Authentication (Google OAuth mock)
-│   ├── books/       # ✅ Book catalogue and detail
-│   ├── transactions/  # 🔲 Phase 2
-│   ├── fines/         # 🔲 Phase 2
-│   ├── gamification/  # 🔲 Phase 2
-│   ├── notifications/ # 🔲 Phase 2–3
-│   ├── admin/         # 🔲 Phase 3
-│   └── librarian/     # 🔲 Phase 2
+│   ├── auth/
+│   ├── books/
+│   ├── transactions/
+│   ├── fines/
+│   ├── gamification/
+│   ├── notifications/
+│   ├── admin/
+│   └── librarian/
 ├── routing/         # GoRouter config + role-based guards
 ├── app.dart         # Root MaterialApp widget
 ├── main.dart        # Entry point
@@ -88,11 +88,3 @@ This app uses the **Inter** font family bundled offline. To set up:
 3. Uncomment the `fonts:` section in `pubspec.yaml`
 
 > The app works without Inter — it falls back to the platform default font.
-
-## 🗺 Roadmap
-
-| Phase | Scope | Status |
-|---|---|---|
-| Phase 1 | App skeleton, auth, book catalogue | ✅ Complete |
-| Phase 2 | Transactions, fines, gamification, librarian dashboard | 🔲 Planned |
-| Phase 3 | Notifications, admin panel, Supabase integration | 🔲 Planned |
